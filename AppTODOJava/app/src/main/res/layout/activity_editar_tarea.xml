@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditarTarea"
+    android:orientation="vertical">
+
+    <android.widget.EditText
+        android:id="@+id/Titl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:background="@drawable/rectangulo"
+        android:gravity="center"
+        android:textSize="40dp"
+
+        android:layout_margin="10dp"
+        android:inputType="textPersonName"
+        android:hint="Titulo"
+        android:textColorHint="#d8d8d8"/>
+
+    <android.widget.EditText
+        android:id="@+id/Actv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:inputType="textMultiLine"
+        android:background="@drawable/rectangulo"
+        android:layout_margin="10dp"
+        android:hint="Actividades"/>
+
+
+    <Button
+        android:id="@+id/buttonEditar"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Editar"
+        android:backgroundTint="@color/md_blue_300"
+        android:layout_gravity="right"
+        />
+
+
+</LinearLayout>
