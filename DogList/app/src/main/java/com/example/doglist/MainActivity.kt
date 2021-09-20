@@ -21,19 +21,31 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
     private lateinit var binding: ActivityMainBinding
     private lateinit var adapter: DogAdapter
 
+<<<<<<< HEAD
     private var dogImages = mutableListOf<String>()
+=======
+    private val dogImages = mutableListOf<String>()
+>>>>>>> main
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.svDogs.setOnQueryTextListener(this)
+<<<<<<< HEAD
         //initRecyclerView()
+=======
+        initRecyclerView()
+>>>>>>> main
     }
 
 
     private fun initRecyclerView(){
+<<<<<<< HEAD
         adapter = DogAdapter(dogImages,this)
+=======
+        adapter = DogAdapter(dogImages)
+>>>>>>> main
         binding.recyclerDogs.layoutManager= LinearLayoutManager(this)
         binding.recyclerDogs.adapter = adapter
     }
@@ -51,11 +63,20 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
             val  puppies : DogsResponse? = call.body()
             runOnUiThread {
                 if(call.isSuccessful){
+<<<<<<< HEAD
                    dogImages = (puppies?.imagenes as MutableList<String>)
 //                    dogImages.clear()
 //                    dogImages.addAll(images)
                     //adapter.notifyDataSetChanged()
                     initRecyclerView()
+=======
+                    val images:List<String> = puppies?.imagenes ?: emptyList()
+
+                    dogImages.clear()
+                    dogImages.addAll(images)
+                    adapter.notifyDataSetChanged()
+
+>>>>>>> main
                 }else{
                     showError()
                 }
