@@ -5,7 +5,6 @@ import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.doglist.databinding.ItemDogBinding
-import com.squareup.picasso.Picasso
 
 class DogViewHolder(view: View, private val context: Context):RecyclerView.ViewHolder(view) {
 

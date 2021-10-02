@@ -54,8 +54,8 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
                    dogImages = (puppies?.imagenes as MutableList<String>)
 //                    dogImages.clear()
 //                    dogImages.addAll(images)
-                    //adapter.notifyDataSetChanged()
-                    initRecyclerView()
+//                    adapter.notifyDataSetChanged()
+                      initRecyclerView()
                 }else{
                     showError()
                 }

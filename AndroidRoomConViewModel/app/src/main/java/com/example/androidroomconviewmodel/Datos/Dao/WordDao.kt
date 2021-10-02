@@ -12,7 +12,6 @@ import kotlinx.coroutines.flow.Flow
 interface WordDao {
 
     /*
-
     Para observar los cambios en los datos, usarás un flujo de kotlinx-coroutines. Usa un valor de muestra de tipo Flow
     en la descripción del método y Room generará todo el código necesario para actualizar Flow cuando se actualice la base de datos.
 
